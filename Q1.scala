@@ -19,12 +19,17 @@ object Q1 extends App {
     else alphabet((x - shift + alphabet.length) % alphabet.length)
   })
 
+def cipher(): Unit ={
   println("Select operation(1 / 2)")
-  println("1.Encryption\n2.Decryption")
+  println("1.Encryption\n2.Decription")
 
   val choice=scala.io.StdIn.readInt()
 
   if(choice==1) println("Encrypted message: "+ Encryption(shift))
 
   else println("Decrypted message: "+ Decryption(shift))
+}
+
+  cipher()
+  
 }
